@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="style1.css">
+    <title>Rahul Resume</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    
+</head>
+<body>
+    <div class="container" id="htmlContent">
+        <!-- First Section -->
+        <div class="left">
+            <img id="user"src="D:\Html_Css_JS\Photos.jpg" alt=" Picture">
+            <div class="info-box">
+                <div class="info">
+                    <h3> Rahul Kumar</h3><br>
+                    <mob: +91 7644******>7644040648</mob:>
+                </div>
+                <a href="rkroy5281@gmail.com" class="info"> rkroy5281@gmail.com</a>
+                <div class="info">
+                    <p>Mahuli,Patna City, Bihar</p> 
+                    <!-- <div class="ppt">
+                            <input type="button" value="PDF" id="generatePDF">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Second Section -->
+        <div class="right">
+            <header>
+               <div id="about">AI/ML, Cloud Engineer <hr>	</div>
+            </header>
+            <div class="title">
+                <h3>EDUCATION</h3>
+            </div>
+            <ul>
+            <li>
+                <hr>
+                <div class="content">
+                    <div class="eduname">Bachelor of Technology (B.Tech)</div>
+                    <div class="educont">Natioal Institute of Science and Technology, Berhampur,Odisha <br> 2020 - 2024</div>
+                </div><hr>
+            </li>
+            <li>
+               <div class="content">
+                  <div class="eduname">Senior Secondary (XII)</div>
+                  <div class="educont">Oriental College Patna City,Patna,Bihar<br> (B.S.E.B) <br> Year of completion: 2020 | Percentage: 62%</div>
+                </div><hr>
+            </li>
+            <li>
+               <div class="content">
+                   <div class="eduname">Secondary (X)</div>
+                   <div class="educont">Marwari High School, Patna,Bihar<br> (B.S.E.B)<br> Year of completion: 2017 | Percentage: 51%</div>
+                </div><hr>
+            </li>
+            </ul>
+            <div class="title">
+                <p>SKILLS</p>
+            </div>
+            <div class="container2 content">
+                <div class="item">
+                    <li>C / Python / Java</li>
+                    <li>Docker</li>
+                    <li>Jenkins</li>
+                    <li>Kubernetes</li>
+                    <li>Kotlin</li>
+                    <li>Machine Learning</li>
+                    <li>Natural Langauage Processing</li>
+                    <li>Deep Learning</li>
+                </div>
+            </div>
+            <div class="title">
+                <h3>LANGUAGE KNOWN</h3>
+            </div>
+            <div class="container2 content">
+                <div class="item">
+                    <li>HINDI</li>
+                    
+                    <li>ENGLISH</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+let doc = new jsPDF('l','pt','dl');
+doc.addHTML(document.body,function() {
+    doc.save('resume.pdf');
+});
+
+</script>
+</html>
